@@ -51,27 +51,6 @@ function toogleFunc(){
         direction = 1;
         break;
     }});
-    
-    if (typeof DeviceMotionEvent.requestPermission === 'function') {
-  DeviceMotionEvent.requestPermission()
-    .then(permissionState => {
-      if (permissionState === 'granted') {
-        window.addEventListener('devicemotion', deviceMotionHandler, false);
-      }
-    })
-    .catch(console.error);
-} else {
-  window.addEventListener('devicemotion', deviceMotionHandler, false);
-}
-
-    
-    window.addEventListener("deviceorientation", function(event) {
-  // Получаем значение угла наклона по оси X
-  var x = event.gamma;
-
-  // Изменяем координату картинки по оси X
-  shipX += x;
-});
 
     for (var i = 0; i < 4; i++){meteors.push(meteor)};
 
@@ -94,6 +73,30 @@ function toogleFunc(){
         }
       ctx.drawImage(meteors[ind], metXArr[ind], metYArr[ind]);}
       metYArr[0] += 3;       metYArr[1] += 3;      metYArr[2] += 3;     metYArr[3] += 3;
+
+// ВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВ
+          var nodeAG = document.getElementById('accelerationIncludingGravity');
+   var maxAG = 0;
+   function onMotionChange(e) {
+     // покажем значения параметров в реальном времени
+     var ag = e.accelerationIncludingGravity;
+     nodeAG.innerHTML = '';
+     for(var i in ag){
+        nodeAG.innerHTML += i + ' = ' + ag[i].toFixed(2) + '</br>';
+        if(Math.abs(maxAG) < Math.abs(ag[i])){
+          maxAG = ag[i];
+        }
+     }
+     ctx.drawImage(ship, shipX, shipY)
+     nodeAG.innerHTML += '<strong>MAX = '+maxAG.toFixed(2)+'</strong></br>';
+     if(ag.x > ag.y && ag.x > ag.z){ nodeAG.innerHTML += '<span>Горизонтально перед собой</span>';}
+     if(ag.y > ag.x && ag.y > ag.z){ nodeAG.innerHTML += '<span>Вертикально перед собой</span>';}
+     if(ag.z > ag.x && ag.z > ag.y){ nodeAG.innerHTML += '<span>На столе</span>';}
+     ctx.drawImage(ship, ag.x * 10, ag.y * 10);
+
+  }
+  window.addEventListener('devicemotion', onMotionChange, true);
+// ВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВВ
 
     requestAnimationFrame(draw)
 
