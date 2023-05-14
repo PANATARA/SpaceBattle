@@ -52,6 +52,19 @@ function toogleFunc(){
         break;
     }});
     
+    if (typeof DeviceMotionEvent.requestPermission === 'function') {
+  DeviceMotionEvent.requestPermission()
+    .then(permissionState => {
+      if (permissionState === 'granted') {
+        window.addEventListener('devicemotion', deviceMotionHandler, false);
+      }
+    })
+    .catch(console.error);
+} else {
+  window.addEventListener('devicemotion', deviceMotionHandler, false);
+}
+
+    
     window.addEventListener("deviceorientation", function(event) {
   // Получаем значение угла наклона по оси X
   var x = event.gamma;
