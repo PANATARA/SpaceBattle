@@ -54,10 +54,10 @@ function toogleFunc(){
     
     window.addEventListener("deviceorientation", function(event) {
   // Получаем значение угла наклона по оси X
-  var x = event.beta;
+  var x = event.gamma;
 
   // Изменяем координату картинки по оси X
-  ship.style.left = x + "px";
+  shipX += x;
 });
 
     for (var i = 0; i < 4; i++){meteors.push(meteor)};
