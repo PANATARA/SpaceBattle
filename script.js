@@ -51,6 +51,14 @@ function toogleFunc(){
         direction = 1;
         break;
     }});
+    
+    window.addEventListener("deviceorientation", function(event) {
+  // Получаем значение угла наклона по оси X
+  var x = event.beta;
+
+  // Изменяем координату картинки по оси X
+  ship.style.left = x + "px";
+});
 
     for (var i = 0; i < 4; i++){meteors.push(meteor)};
 
