@@ -77,7 +77,7 @@ function toogleFunc(){
 
       for (var ind = 0; ind < 4; ind++){
         if (metYArr[ind] > 512){
-          metYArr[ind] = -5;
+          metYArr[ind] = -50;
           metXArr[ind] = randomNum(0, 450)
         }
       ctx.drawImage(meteors[ind], metXArr[ind], metYArr[ind]);}
