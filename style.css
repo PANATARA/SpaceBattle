@@ -4,7 +4,9 @@
 
 #canvas{
   position: absolute;
-  left: 30%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -40%);
   background-color: aliceblue;
 }
 
@@ -13,19 +15,4 @@
   border-radius: 25px;
   height: 50px;
   width: 100px;
-}
-
-div {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
-  color:green;
-}
-
-div strong{
-   font-size: 1.2em;
-   color:red;  
-}
-
-div span{
-   color:blue;  
 }
