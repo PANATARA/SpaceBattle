@@ -28,6 +28,7 @@
   top: 1300px;
   font-size: 250px;
   color: rgb(0, 0, 0);
+  left: 80px;
 }
 
 #rightbutt{
@@ -37,7 +38,7 @@
   width: 300px;
   position: absolute;
   top: 1300px;
-  right: 120px;
+  right: 80px;
   font-size: 250px;
   color: rgb(0, 0, 0);
 }
