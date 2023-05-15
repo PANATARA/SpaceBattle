@@ -39,3 +39,44 @@ function toogleFunc(){
   function randomNum(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+
+  // Обрабатываем событие нажатия клавиш
+  document.addEventListener("keydown", function(event) {
+    // Проверяем, какая клавиша была нажата
+    switch(event.key) {
+      case "ArrowLeft": // Стрелка влево
+        direction = -1;
+        break;
+      case "ArrowRight": // Стрелка вправо
+        direction = 1;
+        break;
+    }});
+
+    for (var i = 0; i < 4; i++){meteors.push(meteor)};
+
+  function draw(){
+    if (!isFunctionRunning) {
+      return; // выходим из функции, если isFunctionRunning равна false
+    }
+
+      ctx.drawImage(bg, 0, ypos0);   ctx.drawImage(bg1, 0, ypos1);   ctx.drawImage(bg2, 0, ypos2);      shipX += direction * 2;
+      ypos0 += grav;                 ypos1 += grav;                  ypos2 += grav;                     borders();
+
+      if (ypos0 == 1024) {ypos0 = -512}; if (ypos1 == 1024) {ypos1 = -512}; if (ypos2 == 1024) {ypos2 = -512};
+        
+      ctx.drawImage(ship, shipX, shipY);
+
+      for (var ind = 0; ind < 4; ind++){
+        if (metYArr[ind] > 512){
+          metYArr[ind] = -5;
+          metXArr[ind] = randomNum(0, 450)
+        }
+      ctx.drawImage(meteors[ind], metXArr[ind], metYArr[ind]);}
+      metYArr[0] += 3;       metYArr[1] += 3;      metYArr[2] += 3;     metYArr[3] += 3;
+
+
+
+    requestAnimationFrame(draw)
+
+  }
+  bg2.onload = draw;
