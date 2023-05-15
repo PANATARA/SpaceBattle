@@ -83,7 +83,10 @@ function toogleFunc(){
       ctx.drawImage(meteors[ind], metXArr[ind], metYArr[ind]);}
       metYArr[0] += 3;       metYArr[1] += 3;      metYArr[2] += 3;     metYArr[3] += 3;
 
-
+      if ((metXArr[0] >= shipX - 30 && metXArr[0] <= shipX + 30) && (metYArr[0] >= shipY - 30 && metYArr[0] <= shipY + 30)){location.reload()}
+      if ((metXArr[1] >= shipX - 30 && metXArr[1] <= shipX + 30) && (metYArr[1] >= shipY - 30 && metYArr[1] <= shipY + 30)){location.reload()}
+      if ((metXArr[2] >= shipX - 30 && metXArr[2] <= shipX + 30) && (metYArr[2] >= shipY - 30 && metYArr[2] <= shipY + 30)){location.reload()}
+      if ((metXArr[3] >= shipX - 30 && metXArr[3] <= shipX + 30) && (metYArr[3] >= shipY - 30 && metYArr[3] <= shipY + 30)){location.reload()}
 
     requestAnimationFrame(draw)
 
