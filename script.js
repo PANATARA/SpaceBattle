@@ -53,6 +53,14 @@ function toogleFunc(){
     }});
 
     for (var i = 0; i < 4; i++){meteors.push(meteor)};
+    
+    function shipbuttL(){
+      direction = -1;
+    }
+
+    function shipbuttR(){
+      direction = 1;
+    }
 
   function draw(){
     if (!isFunctionRunning) {
@@ -63,7 +71,8 @@ function toogleFunc(){
       ypos0 += grav;                 ypos1 += grav;                  ypos2 += grav;                     borders();
 
       if (ypos0 == 1024) {ypos0 = -512}; if (ypos1 == 1024) {ypos1 = -512}; if (ypos2 == 1024) {ypos2 = -512};
-        
+
+      
       ctx.drawImage(ship, shipX, shipY);
 
       for (var ind = 0; ind < 4; ind++){
