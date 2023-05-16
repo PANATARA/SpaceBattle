@@ -8,10 +8,11 @@
   left: 50%;
   transform: translate(-50%, -40%);
   background-color: aliceblue;
+  width: 80%;
 }
 
 #startstop {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(144, 144, 144);
   border-radius: 25px;
   height: 150px;
   width: 100px;
