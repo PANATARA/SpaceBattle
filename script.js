@@ -28,7 +28,7 @@ function toogleFunc(){
   var meteors = [];
 
   var direction = 0;
-  var metXArr = [100, 200, 300, 350];
+  var metXArr = [50, 100, 300, 350];
   var metYArr = [100, -2, -15, 0];
 
   function borders(){ //Границы поля для корабля
@@ -76,17 +76,18 @@ function toogleFunc(){
       ctx.drawImage(ship, shipX, shipY);
 
       for (var ind = 0; ind < 4; ind++){
-        if (metYArr[ind] > 512){
+        if (metYArr[ind] > 562){
           metYArr[ind] = -50;
           metXArr[ind] = randomNum(0, 450)
         }
       ctx.drawImage(meteors[ind], metXArr[ind], metYArr[ind]);}
-      metYArr[0] += 3;       metYArr[1] += 3;      metYArr[2] += 3;     metYArr[3] += 3;
+      metYArr[0] += 3;       metYArr[1] += 4;      metYArr[2] += 3;     metYArr[3] += 5;
 
-      if ((metXArr[0] >= shipX - 30 && metXArr[0] <= shipX + 30) && (metYArr[0] >= shipY - 30 && metYArr[0] <= shipY + 30)){location.reload()}
-      if ((metXArr[1] >= shipX - 30 && metXArr[1] <= shipX + 30) && (metYArr[1] >= shipY - 30 && metYArr[1] <= shipY + 30)){location.reload()}
-      if ((metXArr[2] >= shipX - 30 && metXArr[2] <= shipX + 30) && (metYArr[2] >= shipY - 30 && metYArr[2] <= shipY + 30)){location.reload()}
-      if ((metXArr[3] >= shipX - 30 && metXArr[3] <= shipX + 30) && (metYArr[3] >= shipY - 30 && metYArr[3] <= shipY + 30)){location.reload()}
+
+      if ((metXArr[0] >= shipX - 25 && metXArr[0] <= shipX + 25) && (metYArr[0] >= shipY - 25 && metYArr[0] <= shipY + 25)){ isFunctionRunning = false}
+      if ((metXArr[1] >= shipX - 25 && metXArr[1] <= shipX + 25) && (metYArr[1] >= shipY - 25 && metYArr[1] <= shipY + 25)){ isFunctionRunning = false}
+      if ((metXArr[2] >= shipX - 25 && metXArr[2] <= shipX + 25) && (metYArr[2] >= shipY - 25 && metYArr[2] <= shipY + 25)){ isFunctionRunning = false}
+      if ((metXArr[3] >= shipX - 25 && metXArr[3] <= shipX + 25) && (metYArr[3] >= shipY - 25 && metYArr[3] <= shipY + 25)){ isFunctionRunning = false}
 
     requestAnimationFrame(draw)
 
