@@ -20,7 +20,7 @@ function toogleFunc(){
   var ypos1 = 512;
 
   var shipX = 210;
-  var shipY = 450;
+  var shipY = 800;
 
   var grav = 1;
   var metY = 30;
@@ -76,7 +76,7 @@ function toogleFunc(){
       ctx.drawImage(ship, shipX, shipY);
 
       for (var ind = 0; ind < 4; ind++){
-        if (metYArr[ind] > 562){
+        if (metYArr[ind] > 1000){
           metYArr[ind] = -50;
           metXArr[ind] = randomNum(0, 450)
         }
