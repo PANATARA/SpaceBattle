@@ -20,7 +20,7 @@ function toogleFunc(){
   var ypos1 = 512;
 
   var shipX = 210;
-  var shipY = 700;
+  var shipY = 800;
 
   var grav = 1;
   var metY = 30;
@@ -28,8 +28,8 @@ function toogleFunc(){
   var meteors = [];
 
   var direction = 0;
-  var metXArr = [50, 100, 300, 350];
-  var metYArr = [100, -2, -15, 0];
+  var metXArr = [50, 100, 300, 350, 75, 330];
+  var metYArr = [100, -2, -15, 0, -10, 0];
 
   function borders(){ //Границы поля для корабля
     if (shipX > 400) {shipX = 400}
@@ -52,7 +52,30 @@ function toogleFunc(){
         break;
     }});
 
-    for (var i = 0; i < 4; i++){meteors.push(meteor)};
+    var n = 2;
+    function easyFunc(){
+      n = 2
+      meteors = [];
+      for (var i = 0; i < n; i++) {
+        meteors.push(meteor);
+      }
+    }
+    function mediumFunc(){
+      n = 4
+      meteors = [];
+      for (var i = 0; i < n; i++) {
+        meteors.push(meteor);
+      }
+    }
+    function hardFunc(){
+      n = 6
+      meteors = [];
+      for (var i = 0; i < n; i++) {
+        meteors.push(meteor);
+      }
+    }
+
+    for (var i = 0; i < n; i++){meteors.push(meteor)};
     
     function shipbuttL(){
       direction = -1;
@@ -87,21 +110,22 @@ function toogleFunc(){
       
       ctx.drawImage(ship, shipX, shipY);
 
-      for (var ind = 0; ind < 4; ind++){
+      for (var ind = 0; ind < n; ind++){
         if (metYArr[ind] > 1000){
           metYArr[ind] = -50;
           metXArr[ind] = randomNum(0, 450)
         }
       ctx.drawImage(meteors[ind], metXArr[ind], metYArr[ind]);}
-      metYArr[0] += 3;       metYArr[1] += 4;      metYArr[2] += 3;     metYArr[3] += 5;
+      metYArr[0] += 3;       metYArr[1] += 4;      metYArr[2] += 3;     metYArr[3] += 5;     metYArr[4] += 3;    metYArr[5] += 4 
 
 
-      if ((metXArr[0] >= shipX - 25 && metXArr[0] <= shipX + 25) && (metYArr[0] >= shipY - 25 && metYArr[0] <= shipY + 25)){ isFunctionRunning = false}
-      if ((metXArr[1] >= shipX - 25 && metXArr[1] <= shipX + 25) && (metYArr[1] >= shipY - 25 && metYArr[1] <= shipY + 25)){ isFunctionRunning = false}
-      if ((metXArr[2] >= shipX - 25 && metXArr[2] <= shipX + 25) && (metYArr[2] >= shipY - 25 && metYArr[2] <= shipY + 25)){ isFunctionRunning = false}
-      if ((metXArr[3] >= shipX - 25 && metXArr[3] <= shipX + 25) && (metYArr[3] >= shipY - 25 && metYArr[3] <= shipY + 25)){ isFunctionRunning = false}
+      for (var m = 0; m < n; m++){
+        if ((metXArr[m] >= shipX - 25 && metXArr[m] <= shipX + 25) && (metYArr[m] >= shipY - 25 && metYArr[m] <= shipY + 25)){
+          isFunctionRunning = false;
+        }
+      }
 
-    requestAnimationFrame(draw)
+      requestAnimationFrame(draw)
 
   }
   bg2.onload = draw;
