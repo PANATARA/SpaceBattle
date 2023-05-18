@@ -20,7 +20,7 @@ function toogleFunc(){
   var ypos1 = 512;
 
   var shipX = 210;
-  var shipY = 800;
+  var shipY = 700;
 
   var grav = 1;
   var metY = 30;
