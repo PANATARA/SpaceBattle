@@ -43,7 +43,7 @@
   background-color: rgb(248, 4, 4);
   border-radius: 5px;
   height: 90%;
-  width: 100px;
+  width: 200px;
   font-size: 120%;
   margin-left: 10px;
   margin-right: 10px;
@@ -62,25 +62,25 @@
 #leftbutt{
   background-color: rgb(148, 144, 144);
   border-radius: 25px;
-  height:  200px;
-  width:  200px;
+  height:  20vw;
+  width:  20vw;
   position: absolute;
   top: 90%;
   font-size: 150px;
   color: rgb(0, 0, 0);
   left: 0px;
-  padding-left: 0;
+  padding-left: 0%;
 }
 
 #rightbutt{
   background-color: rgb(148, 144, 144);
   border-radius: 25px;
-  height: 200px;
-  width: 200px;
+  height: 20vw;
+  width: 20vw;
   position: absolute;
   top: 90%;
   right: 0px;
   font-size: 150px;
   color: rgb(0, 0, 0);
-  padding-left: 0;
+  padding-left: 0%;
 }
