@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
     <link rel="stylesheet" href="style.css"/>
     <!-- <script src="script.js"></script> -->
     <title>Game</title>
 </head>
 <body>
     <canvas id="canvas" width="512" height="1024"></canvas>
-    <!-- <img src="Images\pixel_bg.png" id="myimg">
-    <img src="Images\pixel_bg.png" id="myimg1"> -->
-    <!-- <img src="Images\pixel_bg.png" id="myimg2">
-    <img src="Images\pixel_bg.png" id="myimg3"> -->
-    <button onclick="toogleFunc()" id="startstop">Pause</button>
-    <button onclick="shipbuttL()" id="leftbutt">L</button>
-    <button onclick="shipbuttR()" id="rightbutt">R</button>
-
-
+    <div class="menu" style="width:100%;height:6%;">
+        <button onclick="toogleFunc()" id="startstop">Pause</button>
+        <button onclick="uprav()" id="buttuprav">Switch controllers</button>
+    </div>  
+    <button onclick="shipbuttL()" id="leftbutt" style="display: none;">L</button>
+    <button onclick="shipbuttR()" id="rightbutt" style="display: none;">R</button>
     <script src="script.js"></script>
 </body>
 </html>
