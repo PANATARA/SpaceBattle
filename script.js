@@ -61,6 +61,18 @@ function toogleFunc(){
     function shipbuttR(){
       direction = 1;
     }
+    var upbuttL = document.getElementById("leftbutt");
+    var upbuttR = document.getElementById("rightbutt");
+
+    function uprav(){
+      if (upbuttL.style.display == "none"){
+        upbuttL.style.display = "block";
+        upbuttR.style.display = "block";
+      } else {
+        upbuttL.style.display = "none";
+        upbuttR.style.display = "none";
+      }
+    }
 
   function draw(){
     if (!isFunctionRunning) {
