@@ -69,6 +69,7 @@
   font-size: 150px;
   color: rgb(0, 0, 0);
   left: 0px;
+  padding-left: 0;
 }
 
 #rightbutt{
@@ -81,4 +82,5 @@
   right: 0px;
   font-size: 150px;
   color: rgb(0, 0, 0);
+  padding-left: 0;
 }
