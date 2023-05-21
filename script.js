@@ -12,8 +12,13 @@ function toogleFunc(){
   var bg = new Image();                   var bg1 = new Image();                    var meteor = new Image();
   bg.src = 'Images/pixel_bg.png';         bg1.src = 'Images/pixel_bg.png';          meteor.src = "Images/meteornew.png";
 
-  var bg2 = new Image();                  var ship = new Image();
-  bg2.src = 'Images/pixel_bg.png';        ship.src = 'Images/shipcool.png';
+  var bg2 = new Image();               
+  bg2.src = 'Images/pixel_bg.png';        
+
+  var ship = new Image();
+  ship.src = 'Images/shipcool.png';
+
+
 
   var ypos2 = -512;         
   var ypos0 = 0;
