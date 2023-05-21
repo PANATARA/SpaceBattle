@@ -2,6 +2,11 @@
     background-color: rgb(0, 0, 0);
 }
 
+@font-face {
+  font-family: Pompadur;
+  src: url(Fonts/minecraft.ttf);
+ }
+
 .menu {
   position: fixed;
   top: 0;
@@ -9,6 +14,19 @@
   left: 0%;
   display: flex;
   align-items: center;
+  width:100%;
+  
+}
+
+@media (min-height: 1024px){
+  .menu{
+    height: 3%;
+  }
+}
+@media (max-height: 1025px){
+  .menu{
+    height: 6%;
+  }
 }
 
 
@@ -39,42 +57,97 @@
   }
 }
 
+
 #startstop {
   background-color: rgb(8, 4, 248);
   border-radius: 5px;
   height: 90%;
-  width: 200px;
+  width: 15vw;
   font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
   margin-left: 10px;
   margin-right: 10px;
 }
+
+@media (min-width: 768px){
+  #startstop {
+    max-width: 100%;
+    max-height: 90%;
+  }
+}
+
+@media (max-width: 767px){
+  #startstop {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+
 
 #buttuprav {
   background-color: rgb(8, 4, 248);
   border-radius: 5px;
   height: 90%;
-  width: 220px;
+  width: 20vw;
   font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media (min-width: 768px){
+  #buttuprav {
+    max-width: 100%;
+    max-height: 90%;
+  }
+}
+
+@media (max-width: 767px){
+  #buttuprav {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+@media (min-width: 768px){
+  #diff {
+    max-width: 100%;
+    max-height: 90%;
+  }
+}
+
+@media (max-width: 767px){
+  #diff {
+    max-width: 50%;
+    max-height: 50%;
+  }
 }
 
 .difficulty{
   background-color: rgb(8, 4, 248);
   border-radius: 5px;
   height: 90%;
-  width: 45vw;
-  font-size: 150%;
+  width: 55vw;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: Pompadur;
   margin-left: 10px;
   margin-right: 10px;
+  padding-left: 10px;
+ 
 }
 
 #easy{
   background-color: rgb(4, 248, 16);
   border-radius: 5px;
   height: 90%;
-  width: 8vw;
-  font-size: 90%;
+  width: 11vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -83,18 +156,24 @@
   background-color: rgb(248, 134, 4);
   border-radius: 5px;
   height: 90%;
-  width: 8vw;
-  font-size: 100%;
+  width: 11vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
   margin-left: 10px;
   margin-right: 10px;
+  font-family: Pompadur;
+ 
 }
 
 #hard{
   background-color: rgb(248, 4, 4);
   border-radius: 5px;
   height: 90%;
-  width: 8vw;
-  font-size: 100%;
+  width: 11vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -107,6 +186,8 @@
   position: absolute;
   top: 90%;
   font-size: 150px;
+  font-weight: bold;
+  font-family: Pompadur;
   color: rgb(0, 0, 0);
   left: 0px;
   padding-left: 0%;
@@ -121,6 +202,8 @@
   top: 90%;
   right: 0px;
   font-size: 150px;
+  font-weight: bold;
+  font-family: Pompadur;
   color: rgb(0, 0, 0);
   padding-left: 0%;
 }
