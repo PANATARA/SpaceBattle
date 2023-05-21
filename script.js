@@ -102,6 +102,13 @@ function toogleFunc(){
       }
     }
 
+    var defeat = document.getElementById("defeat");
+    var menu = document.getElementById("menuu");
+
+    function reload(){
+      location.reload()
+    }
+
   function draw(){
     if (!isFunctionRunning) {
       return; // выходим из функции, если isFunctionRunning равна false
@@ -126,7 +133,7 @@ function toogleFunc(){
 
       for (var m = 0; m < n; m++){
         if ((metXArr[m] >= shipX - 25 && metXArr[m] <= shipX + 25) && (metYArr[m] >= shipY - 25 && metYArr[m] <= shipY + 25)){
-          isFunctionRunning = false;
+          menu.style.display= "none"; defeat.style.display = "block"; isFunctionRunning = false;
         }
       }
 
