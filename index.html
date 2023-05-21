@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
     <link rel="stylesheet" href="style.css"/>
-    <!-- <script src="script.js"></script> -->
     <title>Game</title>
 </head>
 <body>
     <canvas id="canvas" width="512" height="1024"></canvas>
-    <div class="menu" style="width:100%;height:6%;">
-        <button onclick="toogleFunc()" id="startstop">Pause</button>
-        <button onclick="uprav()" id="buttuprav">Switch controllers</button>
-        <div class="difficulty"> Difficulty:
+    <div class="menu" >
+        <button  onclick="toogleFunc()" id="startstop">Pause</button>
+        <button  onclick="uprav()" id="buttuprav">Switch controls</button>
+        <div class="difficulty">DIFFICULTY
             <button onclick="easyFunc()" id="easy">Easy</button>
             <button onclick="mediumFunc()" id="medium">Medium</button>
             <button onclick="hardFunc()" id="hard">Hard</button>
