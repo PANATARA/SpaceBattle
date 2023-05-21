@@ -20,12 +20,12 @@
 
 @media (min-height: 1024px){
   .menu{
-    height: 10%;
+    height: 4%;
   }
 }
 @media (max-height: 1025px){
   .menu{
-    height: 10%;
+    height: 6%;
   }
 }
 
@@ -206,4 +206,37 @@
   font-family: Pompadur;
   color: rgb(0, 0, 0);
   padding-left: 0%;
+}
+
+#defeat{
+  width: 70%;
+  height: 40%;
+  position: fixed;
+  top: 30%;
+  left: 15%;
+  background: linear-gradient(70deg, rgb(255, 0, 0), rgb(255, 0, 0));
+  font-weight: bold;
+  font-family: Pompadur;
+  font-size: 600%;
+  align-items: center;
+  display: flex;
+  padding-top: 5%;
+}
+
+#defeatqq{
+  text-align: center;
+  margin: auto;
+  background: none;
+}
+
+#reload {
+  width: 70%;
+  height: 42%;
+  background-color: aqua;
+  font-weight: bold;
+  font-family: Pompadur;
+  font-size: 100%;
+  position: relative;
+  top: 15%;
+  left: 15%;
 }
