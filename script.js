@@ -18,7 +18,7 @@ function toogleFunc(){
   bg2.src = 'Images/pixel_bg.png';        
 
   var ship = new Image();
-  ship.src = 'Images/shipcool.png';
+  ship.src = 'Images/pixil-frame-0 (2).png';
 
   var startgame = document.getElementById("startgame");
 
