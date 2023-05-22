@@ -17,7 +17,7 @@
   top: 40%;
   left: 19%;
   text-align: center;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 @media (min-height: 1025px){
