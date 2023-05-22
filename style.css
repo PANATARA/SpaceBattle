@@ -17,6 +17,12 @@
   top: 40%;
   left: 19%;
   color: rgb(0, 0, 0);
+  align-items: center;
+}
+
+#startid{
+  position: relative;
+  background: none;
 }
 
 @media (min-height: 1025px){
