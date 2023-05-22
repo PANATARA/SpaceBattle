@@ -16,6 +16,7 @@
   position: fixed;
   top: 40%;
   left: 19%;
+  text-align: center;
 }
 
 @media (min-height: 1025px){
