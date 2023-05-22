@@ -1,0 +1,309 @@
+*{
+    background-color: rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: Pompadur;
+  src: url(Fonts/minecraft.ttf);
+}
+
+.counter {
+  position: fixed;
+  top: 7%;
+  background-color: rgb(183, 134, 233);
+  right: 5%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+@media (min-height: 1025px){
+  .counter{
+    width:23%;
+    font-size: 250%;
+    border-radius: 25px;
+  }
+}
+@media (max-height: 1025px){
+  .counter{
+    width:10%;
+  }
+}
+#bulochhki{
+  background: none;
+ 
+}
+
+#countBulka {
+  background: none;
+} 
+
+
+#startid {
+  background-color: chartreuse;
+  color: black;
+  font-weight: bold;
+  font-family: Pompadur;
+  position: fixed;
+  top:20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5%;
+}
+
+
+@media (min-height: 1025px){
+  #startgame{
+    font-size: 900%;
+  }
+}
+@media (max-height: 1025px){
+  #startgame{
+    font-size: 420%;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  background-color: rgb(168, 166, 170);
+  left: 0%;
+  display: flex;
+  align-items: center;
+  width:100%;
+  
+}
+
+@media (min-height: 1024px){
+  .menu{
+    height: 4%;
+  }
+}
+@media (max-height: 1025px){
+  .menu{
+    height: 6%;
+  }
+}
+
+
+/* Общие стили канваса */
+#canvas {
+  display: block;
+  margin: 0 auto;
+ 
+}
+
+/* Стили для ноутбука и больших экранов */
+@media (min-width: 768px) {
+  #canvas {
+    height: 100vh;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+/* Стили для телефона и маленьких экранов */
+@media (max-width: 767px) {
+  #canvas {
+    width: 90vw;
+    height: calc(90vw * 2); /* Пропорция 1:2 (ширина:высота) */
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0 auto;
+  }
+}
+
+
+#startstop {
+  background-color: rgb(8, 4, 248);
+  border-radius: 5px;
+  height: 90%;
+  width: 15vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px){
+  #startstop {
+    max-width: 100%;
+    max-height: 90%;
+  }
+}
+
+@media (max-width: 767px){
+  #startstop {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+
+
+#buttuprav {
+  background-color: rgb(8, 4, 248);
+  border-radius: 5px;
+  height: 90%;
+  width: 20vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px){
+  #buttuprav {
+    max-width: 100%;
+    max-height: 90%;
+  }
+}
+
+@media (max-width: 767px){
+  #buttuprav {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+@media (min-width: 768px){
+  #diff {
+    max-width: 100%;
+    max-height: 90%;
+  }
+}
+
+@media (max-width: 767px){
+  #diff {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+.difficulty{
+  background-color: rgb(8, 4, 248);
+  border-radius: 5px;
+  height: 90%;
+  width: 55vw;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: Pompadur;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+ 
+}
+
+#easy{
+  background-color: rgb(4, 248, 16);
+  border-radius: 5px;
+  height: 90%;
+  width: 11vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#medium{
+  background-color: rgb(248, 134, 4);
+  border-radius: 5px;
+  height: 90%;
+  width: 11vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Pompadur;
+ 
+}
+
+#hard{
+  background-color: rgb(248, 4, 4);
+  border-radius: 5px;
+  height: 90%;
+  width: 11vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#Cat{
+  background-color: rgb(154, 77, 255);
+  border-radius: 5px;
+  height: 90%;
+  width: 11vw;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Pompadur;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#leftbutt{
+  background-color: rgb(148, 144, 144);
+  border-radius: 25px;
+  height:  20vw;
+  width:  20vw;
+  position: absolute;
+  top: 90%;
+  font-size: 150px;
+  font-weight: bold;
+  font-family: Pompadur;
+  color: rgb(0, 0, 0);
+  left: 0px;
+  padding-left: 0%;
+}
+
+#rightbutt{
+  background-color: rgb(148, 144, 144);
+  border-radius: 25px;
+  height: 20vw;
+  width: 20vw;
+  position: absolute;
+  top: 90%;
+  right: 0px;
+  font-size: 150px;
+  font-weight: bold;
+  font-family: Pompadur;
+  color: rgb(0, 0, 0);
+  padding-left: 0%;
+}
+
+#defeat{
+  width: 70%;
+  height: 40%;
+  position: fixed;
+  top: 30%;
+  left: 15%;
+  background: linear-gradient(70deg, rgb(255, 0, 0), rgb(255, 0, 0));
+  font-weight: bold;
+  font-family: Pompadur;
+  font-size: 600%;
+  align-items: center;
+  display: flex;
+  padding-top: 5%;
+}
+
+#defeatqq{
+  text-align: center;
+  margin: auto;
+  background: none;
+}
+
+#reload {
+  width: 70%;
+  height: 42%;
+  background-color: aqua;
+  font-weight: bold;
+  font-family: Pompadur;
+  font-size: 100%;
+  position: relative;
+  top: 15%;
+  left: 15%;
+}
