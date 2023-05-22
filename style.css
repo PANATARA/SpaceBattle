@@ -5,7 +5,29 @@
 @font-face {
   font-family: Pompadur;
   src: url(Fonts/minecraft.ttf);
- }
+}
+
+#startgame{
+  width: 60%;
+  height: 20%;
+  background-color: chartreuse;
+  font-weight: bold;
+  font-family: Pompadur;
+  position: fixed;
+  top: 40%;
+  left: 19%;
+}
+
+@media (min-height: 1025px){
+  #startgame{
+    font-size: 900%;
+  }
+}
+@media (max-height: 1025px){
+  #startgame{
+    font-size: 420%;
+  }
+}
 
 .menu {
   position: fixed;
