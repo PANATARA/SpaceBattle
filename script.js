@@ -1,5 +1,7 @@
 // http://127.0.0.1:5500/  ---- СЕРВЕР ----
 
+
+
 let isFunctionRunning = false;
 function toogleFunc(){
   if (isFunctionRunning){isFunctionRunning = false; console.log(isFunctionRunning);}
@@ -18,7 +20,7 @@ function toogleFunc(){
   var ship = new Image();
   ship.src = 'Images/shipcool.png';
 
-
+  var startgame = document.getElementById("startgame");
 
   var ypos2 = -512;         
   var ypos0 = 0;
@@ -108,6 +110,19 @@ function toogleFunc(){
     function reload(){
       location.reload()
     }
+
+
+    function start(){
+      menu.style.display = "flex";
+      startgame.style.display = "none";
+      isFunctionRunning = true; 
+      draw();
+      defeat.style.display= "none";
+    }
+
+
+
+
 
   function draw(){
     if (!isFunctionRunning) {
