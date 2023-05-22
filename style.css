@@ -7,17 +7,16 @@
   src: url(Fonts/minecraft.ttf);
 }
 
-#startgame {
-  width: 60%;
-  height: 2096;
+#startid {
   background-color: chartreuse;
+  color: black;
   font-weight: bold;
   font-family: Pompadur;
   position: fixed;
-  top: 40%;
+  top:20%;
   left: 50%;
   transform: translateX(-50%);
-  color: reb(0, 0, 0);
+  padding: 5%;
 }
 
 @media screen and (max-width: 767px) {
