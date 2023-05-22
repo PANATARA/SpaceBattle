@@ -7,22 +7,27 @@
   src: url(Fonts/minecraft.ttf);
 }
 
-#startgame{
+#startgame {
   width: 60%;
-  height: 20%;
+  height: 2096;
   background-color: chartreuse;
   font-weight: bold;
   font-family: Pompadur;
   position: fixed;
   top: 40%;
-  left: 19%;
-  color: rgb(0, 0, 0);
-  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  color: reb(0, 0, 0);
 }
 
-#startid{
-  position: relative;
-  background: none;
+@media screen and (max-width: 767px) {
+  /* Стили для мобильных устройств */
+  #startgame {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Другие изменения стилей, если необходимо */
+  }
 }
 
 @media (min-height: 1025px){
