@@ -104,10 +104,11 @@ function toogleFunc(){
       location.reload()
     }
 
-
+    var counter = document.getElementById("counter");
     function start(){
       menu.style.display = "flex";
       startgame.style.display = "none";
+      counter.style.display = "flex";
       isFunctionRunning = true; 
       draw();
       defeat.style.display= "none";
@@ -142,4 +143,4 @@ function toogleFunc(){
       }
       requestAnimationFrame(draw)
   }
-  bg2.onload = draw;
+  bg.onload = draw;
