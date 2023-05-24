@@ -185,7 +185,7 @@
   background-color: rgb(8, 4, 248);
   border-radius: 5px;
   height: 90%;
-  width: 55vw;
+  width: 57vw;
   font-size: 100%;
   font-weight: bold;
   font-family: Pompadur;
@@ -199,24 +199,24 @@
   background-color: rgb(4, 248, 16);
   border-radius: 5px;
   height: 90%;
-  width: 11vw;
+  width: 9vw;
   font-size: 120%;
   font-weight: bold;
   font-family: Pompadur;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 #medium{
   background-color: rgb(248, 134, 4);
   border-radius: 5px;
   height: 90%;
-  width: 11vw;
+  width: 9vw;
   font-size: 120%;
   font-weight: bold;
   font-family: Pompadur;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
   font-family: Pompadur;
  
 }
@@ -225,24 +225,24 @@
   background-color: rgb(248, 4, 4);
   border-radius: 5px;
   height: 90%;
-  width: 11vw;
+  width: 9vw;
   font-size: 120%;
   font-weight: bold;
   font-family: Pompadur;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 #Cat{
   background-color: rgb(154, 77, 255);
   border-radius: 5px;
   height: 90%;
-  width: 11vw;
+  width: 9vw;
   font-size: 120%;
   font-weight: bold;
   font-family: Pompadur;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 30px;
+  margin-right: 4px;
 }
 
 #leftbutt{
